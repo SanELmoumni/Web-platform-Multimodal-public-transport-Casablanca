@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Casa Transport</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="shortcut icon" href="images/casatransport_logo.png" />
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">Page principale.</a></h1>
+
+						
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- Hero -->
+
+
+
+						<section id="hero" class="container">
+							<header id="entete">
+								<input type="submit" name="ok" class="button" value="Afficher plan global de bus." onclick="affiche_bus();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<input type="submit" name="ok" class="button" value="Afficher plan global de tram." onclick="affiche_tram();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<a href="http://127.0.0.1:8000/edsa-PROJET%20PFE/itineraire.php">
+								<input type="submit" name="ok" class="button" value="Rechercher itinéraire." onclick="affiche_itineraire();"></a><br><br>
+
+
+
+								<script type="text/javascript">
+									 
+
+									function affiche_tram(){
+                                        var toto=document.getElementById("hh");
+                                        hh.innerHTML='Vision globale sur les lignes du Tramway.';
+                                        
+                                        var titrebus=document.getElementById("slct");
+                                        slct.innerHTML='Selectionner une station pour afficher son nom !';
+
+                                        var sel=document.getElementById("slct");
+                                        slct.innerHTML='';
+
+                                        var contientout=document.getElementById("hero");
+                                        var toto=document.getElementById("mesliens");
+                                        
+
+                                        mapbus=hero.removeChild(toto);
+                                        	
+
+                                        var maptram = document.createElement("iframe");
+										maptram.src="https://www.google.com/maps/d/u/0/embed?mid=1VQfLYAs9yYvZy_Vdd_zS68RZA3QOIwWs&z=12";
+										maptram.id="imagetrajettram";
+										maptram.width="100%";
+										maptram.height="700";
+										contientout.appendChild(maptram);
+
+									}
+
+
+									function affiche_bus(){
+
+
+
+										var toto=document.getElementById("hh");
+                                        hh.innerHTML='Vision globale sur les lignes de bus.';
+                                        titrebus=document.getElementById("slct");
+                                        slct.innerHTML='Sélectionner un trajet pour afficher son numéro de ligne.';
+
+                                        var contout=document.getElementById("hero");
+                                        contout.removeChild(contout.lastChild);
+                                        contout.appendChild(mapbus);
+
+									}
+
+
+									function affiche_itineraire(){
+										
+
+
+
+										
+									}
+
+
+
+									
+
+
+
+
+								</script>
+
+
+
+							
+								<h2 id="hh">Vision globale sur les lignes de bus.</h2><br>
+								<p  style="color:black;" id="slct"> <b>Sélectionner un trajet pour afficher son numéro de ligne.</b></p>
+							</header>
+
+
+<div id="mesliens">
+	<iframe src="https://www.google.com/maps/d/embed?mid=1w_k-dQR2wvHcNAYBBhE5N68n-GpL_A7H&z=13" width="100%" height="700"></iframe>
+
+
+</div>
+
+
+
+
+						</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+			<!-- Features 1 -->
+				
+
+			<!-- Features 2 -->
+				
+
+			<!-- Footer -->
+				<div id="footer-wrapper">
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>Contactez-nous</h2>
+							<p>Si vous rencontrez un problème quelconque,<br />
+							n'hésitez pas de nous le mentionner.</p>
+						</header>
+						<div class="row">
+							<section class="6u 12u(narrower)">
+								<form method="post" action="#">
+									<div class="row 50%">
+										<div class="6u 12u(mobile)">
+											<input name="name" placeholder="Nom" type="text" />
+										</div>
+										<div class="6u 12u(mobile)">
+											<input name="email" placeholder="Email" type="text" />
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<textarea name="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div class="row 50%">
+										<div class="12u">
+											<ul class="actions">
+												<li><input type="submit" value="Envoyer" /></li>
+												<li><input type="reset" value="Effacer Message" /></li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</section>
+							<section class="6u 12u(narrower)">
+								<div class="row 0%">
+									<ul class="divided icons 6u 12u(mobile)">
+										<li class="icon fa-twitter"><a href="#"><span class="extra">twitter.com/</span>Casatransport</a></li>
+										<li class="icon fa-facebook"><a href="#"><span class="extra">fb.com/</span>Casatransport</a></li>
+									</ul>
+									<ul class="divided icons 6u 12u(mobile)">
+										<li class="icon fa-instagram"><a href="#"><span class="extra">insagram.com/</span>Casatransport</a></li>
+										<li class="icon fa-youtube"><a href="#"><span class="extra">youtube.com/</span>Casatransport</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+					
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

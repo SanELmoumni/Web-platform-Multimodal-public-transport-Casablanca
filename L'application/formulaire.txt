@@ -1,0 +1,25 @@
+							
+								<form>
+									Point départ : 
+										<select name="cars" style="width: 200px">
+											  <option value="volvo">Casa</option>
+											  <option value="saab">Kesh</option>
+											  <option value="opel">Tanger</option>
+											  <option value="audi">Fes</option>
+									    </select> 
+								
+							
+							
+							
+									Destination : 
+										<select name="cars" style="width: 200px">
+											  <option value="volvo">Casa</option>
+											  <option value="saab">Kesh</option>
+											  <option value="opel">Tanger</option>
+											  <option value="audi">Fes</option>
+									    </select> 														
+
+
+<br><br>
+									 <input type="submit" name="ok" class="button" value="Afficher itinéraire.">
+								</form>

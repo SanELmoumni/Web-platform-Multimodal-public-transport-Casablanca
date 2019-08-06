@@ -1,0 +1,15 @@
+										<?php 
+											if(isset($_GET['ok3'])){
+												$conn=NEW PDO("mysql:host=localhost;dbname=plateforme casatramway","root","");
+
+												$selectionn="SELECT nom_mode FROM mode_transport";
+												$res=$conn->query($selectionn);
+												$res->data_seek(0);
+												foreach ($res as $tab) {
+													echo "$res";
+												}
+											}
+
+															
+											
+										?>
